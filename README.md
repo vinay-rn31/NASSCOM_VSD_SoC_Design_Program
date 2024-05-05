@@ -8,11 +8,21 @@
 ## Sky130 Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 ### SKY130_D2_SK1 - Chip Floor planning considerations
 #### Utilization factor and aspect ratio 
-![Uploading Screenshot (216).png…]()
+![Screenshot (216)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/0ce6c516-2669-4eeb-8c9d-9dcf0ca60a53)
 * CORE- The logical cells occupies the complete area of the core
 * DIE-A die which consists of core, is small semiconductor material specimen on which the fundamental circuit is fabricated.
-* Utilization factor =Area Occupied by Netlist/Total Area of the core
-* Aspect Ratio=Height/Width
+* Utilization factor = Area Occupied by Netlist/Total Area of the core
+* Aspect Ratio= Height/Width
+
+#### Pre-placed cells
+![Screenshot (223)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/7d9fbd35-c323-4e7f-9f60-c14793f86c8a)
+The arrangement of these IP's in a chip is referred as Floorplanning,These IP's/blocks have user-defined locations, and hence are placed in chip before automated placement-and-routing and are called as pre-placed cells.
+#### De-coupling Capacitors
+![Screenshot (224)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/f56e8124-5851-4c81-bc87-c8ac8c10d7a6)
+#### Power Planning 
+![Screenshot (226)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/2ac6c3df-3dda-44a1-bddc-2ada19b46f16)
+![Screenshot (225)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/701a5f8e-69c6-475e-bb5a-76646ebea114)
+
 ### SKY130_D2_SK2 - Library Binding and Placement
 ### SKY130_D2_SK3 - Cell design and characterization flows
 ### SKY130_D2_SK4 - General timing characterization parameters
