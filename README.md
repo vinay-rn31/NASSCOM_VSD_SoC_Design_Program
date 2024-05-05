@@ -7,6 +7,12 @@
 
 ## Sky130 Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 ### SKY130_D2_SK1 - Chip Floor planning considerations
+#### Utilization factor and aspect ratio 
+![Uploading Screenshot (216).png…]()
+* CORE- The logical cells occupies the complete area of the core
+* DIE-A die which consists of core, is small semiconductor material specimen on which the fundamental circuit is fabricated.
+* Utilization factor =Area Occupied by Netlist/Total Area of the core
+* Aspect Ratio=Height/Width
 ### SKY130_D2_SK2 - Library Binding and Placement
 ### SKY130_D2_SK3 - Cell design and characterization flows
 ### SKY130_D2_SK4 - General timing characterization parameters
