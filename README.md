@@ -4,6 +4,33 @@
 ### SKY130_D1_SK1 - How to talk to computers
 ### SKY130_D1_SK2 - SoC design and OpenLANE
 ### SKY130_D1_SK3 - Get familiar to open-source EDA tools
+![Screenshot (191)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/6c8f9aa1-fea7-45c9-8244-11ec9802f311)
+![Screenshot (193)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/cdb2bd40-fd01-486a-8bbe-70322f807435)
+![Screenshot (197)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/b5fc033b-fe85-4004-8aec-5a7aa1365192)
+![Screenshot (198)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/3c926ab9-093a-44a1-a03d-1fc53512bc77)
+![Screenshot (200)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/a3570639-3c7a-41b1-bf73-c16fa5bbfacc)
+![Screenshot (202)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/fb39545d-c367-4845-a5e7-7361903e719b)
+![Screenshot (203)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/265734f2-e83e-4e93-9d47-534d06b3d0de)
+![Screenshot (204)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/340c01ab-82e6-4b75-94e7-c203147ca9a5)
+![Screenshot (209)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/fb10af71-0ec7-4048-9f63-7c3175eabc48)
+![Screenshot (205)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/9f3aa94a-444f-470e-90c5-a43046c6fb53)
+![Screenshot (210)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/be7b7381-6daa-4ad8-b13c-d065f43087ff)
+![Screenshot (212)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/6b1241dd-54be-4901-82c1-01c7437dc4b3)
+![Screenshot (213)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/fcd60f60-80ed-4873-ae6a-c09ad5a5902e)
+![Screenshot (214)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/db0ad75e-a17f-4476-88a0-8db93b0a8cd0)
+![VirtualBox_vdsworkshop_05_05_2024_21_27_39](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/5122f61d-bd32-4a62-8eea-3e2e617c70e5)
+![VirtualBox_vdsworkshop_05_05_2024_21_28_57](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/481f1b3e-8d78-402d-a908-ff20ddf1587c)
+to invoke openlane:
+docker ./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+
+Assignment:
+![VirtualBox_vdsworkshop_06_05_2024_03_18_02](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/87728bcb-9f91-4fe6-9399-15364d613d1e)
+Flop Ratio = No. of D FlipfLops / Total No. of cells
+           =1613/14876
+           =0.1084
+Percentage of D FF's = 10.84%
 
 ## Sky130 Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 ### SKY130_D2_SK1 - Chip Floor planning considerations
@@ -88,6 +115,31 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 ## Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization
 ### SKY130_D3_SK1 - Labs for CMOS inverter ngspice simulations
+#### IO placer revision
+0 = unequidistant ports
+1 = equidistant ports
+2 = compressed ports 
+To set this mode give command as shown in the below figure
+![equidis](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/5f4947a1-6f1f-4562-bbf8-f88e0e37301a)
+set ::env(FP_IO_MODE) 1
+
+![dis](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/5258d1e8-d569-4328-9fbc-948f0fa4ff50)
+set ::env(FP_IO_MODE) 2
+
+#### SPICE deck creation for CMOS inverter
+![Screenshot (244)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/2fc6255a-61a6-4947-84c2-8397305c39ed)
+
+#### SPICE simulation lab for CMOS inverter
+![Screenshot (246)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/af416398-af5e-4d56-a92a-17d7809705f6)
+
+#### Switching Threshold Vm
+![Screenshot (247)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/d200c925-3305-4b6e-b12b-caa33c36cae0)
+
+#### Static and dynamic simulation of CMOS inverter
+![Screenshot (248)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/3ae9f69f-5d68-40ae-bc42-e4f627e63979)
+
+#### Lab steps to git clone vsdstdcelldesign
+
 ### SKY130_D3_SK2 - Inception of Layout ÃÂ CMOS fabrication process
 ### SKY130_D3_SK3 - Sky130 Tech File Labs
 
