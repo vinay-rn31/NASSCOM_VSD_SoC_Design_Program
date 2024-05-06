@@ -47,9 +47,44 @@ To open Magic give command
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read .. / .. /tmp/merged.lef def read picorv32a.floorplan.def &
 
 ### SKY130_D2_SK2 - Library Binding and Placement
-### SKY130_D2_SK3 - Cell design and characterization flows
-### SKY130_D2_SK4 - General timing characterization parameters
+####  Netlist binding and initial place design
+![Screenshot (231)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/067aeb3c-8582-48e2-a940-671bc59d9af8)
 
+#### Optimize placement using estimated wire-length and capacitance
+![Screenshot (232)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/00e33d1d-5eb7-4d25-9844-052c03736919)
+
+#### Final placement optimization
+![Screenshot (233)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/c1f2c6ed-ee2d-4aa3-a0eb-d397e24c4823)
+
+#### Need for libraries and characterization
+![Screenshot (234)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/f0d23982-b7fa-4f62-99d9-6b3ead638d59)
+
+#### Congestion aware placement using RePlAce
+![placement_2](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/d1d6fede-87fc-43f9-9cb3-19dc267d9998)
+![placement](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/2f7a7904-9bd8-4335-bf67-f83f7b9cfaa4)
+To open Magic give command and to see placement
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read .. / .. /tmp/merged.lef def read picorv32a.placement.def &
+
+### SKY130_D2_SK3 - Cell design and characterization flows
+![Screenshot (237)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/5fb4beaa-5994-4455-a8c2-9fbb4ce8eec0)
+#### Inputs for cell design flow
+![Screenshot (238)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/8eabd77a-6d08-4a42-a415-25353ffc9494)
+
+#### Circuit design step
+![Screenshot (239)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/d790cd36-dce4-4731-82a0-d0b138356f7c)
+
+#### Layout design step
+![Screenshot (240)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/20d46897-1286-4fcb-9c80-0a186914887c)
+
+#### Typical characterization flow
+![Screenshot (241)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/e6fb9910-eae6-4938-98cd-97b6595f0057)
+
+### SKY130_D2_SK4 - General timing characterization parameters
+#### Timing threshold definitions
+![Screenshot (242)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/7b20f20c-a0b5-49f4-ba0b-52dc4d09c967)
+
+#### Propagation delay and transition time
+![Screenshot (243)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/b18f6b7a-f091-49b4-bb77-51039fd6df33)
 
 ## Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization
 ### SKY130_D3_SK1 - Labs for CMOS inverter ngspice simulations
