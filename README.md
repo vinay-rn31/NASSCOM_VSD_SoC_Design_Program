@@ -18,15 +18,16 @@
 ![Screenshot (212)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/6b1241dd-54be-4901-82c1-01c7437dc4b3)
 ![Screenshot (213)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/fcd60f60-80ed-4873-ae6a-c09ad5a5902e)
 ![Screenshot (214)](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/db0ad75e-a17f-4476-88a0-8db93b0a8cd0)
-![VirtualBox_vdsworkshop_05_05_2024_21_27_39](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/5122f61d-bd32-4a62-8eea-3e2e617c70e5)
 ![VirtualBox_vdsworkshop_05_05_2024_21_28_57](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/481f1b3e-8d78-402d-a908-ff20ddf1587c)
+![VirtualBox_vdsworkshop_06_05_2024_03_18_02](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/87728bcb-9f91-4fe6-9399-15364d613d1e)
+
 to invoke openlane:
 docker ./flow.tcl -interactive
 package require openlane 0.9
 prep -design picorv32a
 
 Assignment:
-![VirtualBox_vdsworkshop_06_05_2024_03_18_02](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/87728bcb-9f91-4fe6-9399-15364d613d1e)
+![VirtualBox_vdsworkshop_05_05_2024_21_27_39](https://github.com/vinay-rn31/NASSCOM_VSD_SoC_Design_Program/assets/168123355/5122f61d-bd32-4a62-8eea-3e2e617c70e5)
 Flop Ratio = No. of D FlipfLops / Total No. of cells
            =1613/14876
            =0.1084
